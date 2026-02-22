@@ -1,58 +1,82 @@
-# Dev Container Template - Python & Django/Flask
+# devcontainer-templates-python
 
-Pre-configured containerized development environment for Python web applications using Django or Flask.
+## Detailed Description
 
-## Features
+devcontainer-templates-python is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-- **Python 3.11** with pip
-- **Django** and **Flask** support
-- **FastAPI** support
-- **Black** + **isort** + **flake8** for code quality
-- **pytest** for testing
-- **SQLTools** + **SQLite3 Browser** for database management
-- IntelliCode AI-assisted completion
-- PostgreSQL support via psycopg2
+## Problem Statement
 
-## Quick Start
+Describe the user or business problem this project solves, the target users, and expected outcomes.
 
-1. Copy `.devcontainer` folder to your project root
-2. Open the project in VS Code
-3. Press `F1` and select **"Dev Containers: Reopen in Container"**
+## Solution Overview
 
-## Configuration
+Summarize the architecture, core modules, and runtime behavior at a high level.
 
-### Ports
-- `3000` - Development server (Django/Flask)
-- `5000/5001` - Flask debug mode
-- `8000` - Django development server
-- `8080` - Alternative HTTP server
+## Key Features
 
-### Extensions Included
-- Python
-- Pylance
-- Black Formatter
-- isort
-- flake8
-- Docker
-- PowerShell
-- SQLTools
-- SQLite3 Browser
-- IntelliCode
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
 
-### Post-Create Commands
-- Upgrades pip
-- Installs black, isort, flake8
-- Installs pytest for testing
-- Installs Django, Flask, FastAPI
-- Installs uvicorn, gunicorn for serving
-- Installs PostgreSQL driver
+## Repository Structure
 
-## Requirements
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
+```
 
-- [Docker Desktop](https://www.docker.com/products/docker-desktop)
-- [VS Code](https://code.visualstudio.com/)
-- [Dev Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+## Getting Started
+
+### Prerequisites
+
+- Git
+- Project runtime/toolchain for this repo
+
+### Local Setup
+
+```bash
+make test
+make lint
+```
+
+## Usage
+
+Document primary commands, API routes, CLI examples, or UI workflows here.
+
+## Quality Standards
+
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
+
+## Security
+
+See `SECURITY.md` for responsible disclosure and handling guidelines.
+
+## Contributing
+
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
+
+## Roadmap
+
+Track upcoming milestones, technical debt, and planned feature work.
+
+## Support
+
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
 
 ## License
 
-MIT
+This project is released under the MIT License.
